@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color:rgb(22, 27, 31);
+}
+
+
+.navbar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.port{
+    display: flex;
+    text-align: center;
+    list-style:none;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    animation: slideInFromTop 1s ease; 
+}
+.port li{
+    padding: 30px 30px;
+}
+.port li a {
+    text-decoration: none;
+    color: rgb(201, 172, 130);
+    font-size: 38px;
+    width: 30px;
+    font-family: cursive;
+    
+}
+
+.nav-list{
+    list-style:none;
+    display: flex;
+    align-items: center;
+    padding-left: 21%; 
+    transition: background-color 0.3s ease-in-out;
+    animation: slideInFromTop 1s ease;    
+}
+@keyframes slideInFromTop {
+    from {
+      transform: translateY(-300px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
+.nav-list li{
+    padding: 30px 25px ;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.nav-list li :hover {
+    color:rgb(192, 206, 205);
+    transition: 0.3s;
+    text-decoration: underline;
+
+
+}
+
+.box-main{
+    display: flex;
+    align-items:center;
+    max-width: 80%;
+    margin: 80px;
+    height: 50%;
+    color: rgb(165, 238, 248);
+    padding-bottom: 50px;
+
+}
+.highlight{
+  color: white;
+  font-weight: bold;
+}
+.firstHalf{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  width: 80%;
+  padding: 50px 60px;
+}
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-150px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .firstHalf{
+    animation: slideInFromLeft 1s ease; 
+  }
+
+.text-big{
+    font-size: 30px;
+    font-family:sans-serif;
+    
+}
+
+
+.text-small{
+    font-size: 25px;
+    font-family: sans-serif;
+    
+}
+.app{
+  font-size:25px ;
+  font-family: sans-serif;
+  color: white;
+  margin: 30px 0px;
+}
+.apps a i{
+  font-size: 45px; 
+  background-color: white;
+  border-radius: 8px;
+  
+}
+
+.app1 i{
+  color: #03489b;
+  margin-right: 10px;
+}
+.app2 i{
+  color: #0d6b90;
+}
+.app3 i{
+  margin: 10px;
+  color: black;
+}
+.app4 i{
+  color:#a91b27;
+}
+.app5 i{
+  color: black;
+  margin-left: 10px;
+}
+
+@keyframes slideInFromRight {
+    from {
+      transform: translateX(150px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .logo{
+    animation: slideInFromRight 1s ease; 
+  }
+
+
+.logo{
+    display: flex;
+    justify-content: right;
+    width: 244px;
+    height: 234px;
+    cursor: pointer;
+    background: linear-gradient(180deg,
+    rgb(241, 212, 157),rgb(234, 145, 145),rgb(232, 232, 151));
+    border-radius: 30px;
+    transition: all 0.3s;
+    
+
+}
+.logo img{
+    width:230px;
+    height: 220px;
+    padding: 7px 7px;
+    border-radius: 30px;
+    transition: all 0.3s;
+  
+}
+.logo:hover{
+    border-radius: 120px;
+    background: linear-gradient(180deg,
+    rgb(241, 185, 80),rgb(239, 124, 124),rgb(232, 232, 71));
+}
+.logo img:hover{
+    border-radius: 120px;
+    scale: 0.95s;
+    box-shadow: 0px 0px 100px #43d1d8;
+}
+
+@keyframes slideInFrombottom {
+    from {
+      transform: translateY(150px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .btn{
+    animation: slideInFrombottom 1s ease; 
+  }
+
+
+.btn{
+    padding: 10px 20px;
+    margin: 20px 5px;
+    border-radius: 8px;
+    background-color: white;
+    color:rgb(22, 27, 31) ;
+    cursor: pointer;
+    font-weight: 720;
+}
+.btn:hover{
+    background-color: rgb(22, 27, 31);
+    color:white;
+}
+
+.about{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 35px;
+  padding-top: 30px  ;
+  font-weight: 550;
+
+}
+.secondhalf{
+  padding: 30px 40px ;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+ 
+  background-color: white;
+  border-radius: 30px ;
+
+}
+.hr2{
+  margin:10px 16% 40px 16%;
+  padding: 1px;
+  background-color: #91dbdf;
+  border-radius: 20px;
+  border: 1px solid #91dbdf;
+  
+
+}
+.hr1{
+  margin: 10px 10px 30px 10px;
+  padding: 1px;
+  background-color: #91dbdf;
+  border-radius: 20px;
+  border: 1px solid #91dbdf;
+}
+.Cont{
+  margin-left: 50px;
+  
+  
+}
+.contact{
+  color: white;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  margin: 40px;
+  font-weight: 550;
+}
+.mail{
+  color: #43d1d8;
+  font-size: 18px;
+  margin: 0px 40px;
+
+}
