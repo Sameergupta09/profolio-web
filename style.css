@@ -265,23 +265,29 @@ body{
 }
 
 .background {
-  background-image: url(con-back.jpeg);
-  background:cover;
+  background: rgba(0, 0, 0, 0.7) url("con-back.jpeg");
+  background-size: cover;
+  background-blend-mode: darken;
 }
 .Cont{
-  margin-left: 50px;
+  width: 55%;
+  height: 80%;
+  
 }
 .contact{
   color: white;
   font-size: 35px;
   display: flex;
-  align-items: center;
+  align-items:baseline;
   justify-content:center;
-  margin: 40px;
+  margin: 80px;
   font-weight: 500;
 }
 .location{
   font-family:Arial, Helvetica, sans-serif;
+  margin: 20px;
+  width: 50%;
+  
 }
 
 .location i{
@@ -294,51 +300,98 @@ body{
   display:flex;
   align-items: center;
   justify-content: center;
+  margin: 0 20px 0px 0px ;
 }
 .location span {
-  color: #0d6b90;
+  color: #eceff0;
   font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  
 }
 .location p {
-  color: #0d6b90;
+  color: #f3f8f9;
   font-size: 19px;
-  margin-left: 35px;
+  margin-left: 75px;
 }
 
 .phone{
   font-family:Arial, Helvetica, sans-serif;
+  margin: 20px;
 }
 
 .phone i{
-  color: #91dbdf;
+  color: #262b2b;
   font-size: 23px;
-  margin: 8px;
+  background-color: whitesmoke;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 0px 0px ;
 }
 .phone span {
-  color: #0d6b90;
+  color: #eceff0;
   font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
 }
 .phone p {
-  color: #0d6b90;
+  color: #e7e7e7;
   font-size: 19px;
-  margin-left: 35px;
+  margin-left: 75px;
 }
 
 .email{
   font-family:Arial, Helvetica, sans-serif;
+  margin: 20px;
 }
 
 .email i{
-  color: #91dbdf;
+  color: #262b2b;
   font-size: 23px;
-  margin: 8px;
+  background-color: whitesmoke;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 0px 0px ;
 }
 .email span {
-  color: #0d6b90;
+  color: #eceff0;
   font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21%;
 }
 .email p {
-  color: #0d6b90;
+  color: #f3f6f8;
   font-size: 19px;
-  margin-left: 35px;
+  margin-left: 75px;
+}
+
+.box-con{
+  display: flex;
+  background-color: whitesmoke;
+  align-items:center;
+  flex-direction: column;
+  justify-content:flex-end;
+  border: 2px solid white;
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+}
+.div1{
+  width: 80%;
+  height: 20px;
+  border-radius: 8px;
 }
