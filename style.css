@@ -186,6 +186,7 @@ article img:last-child{
   top: 0;
   left: 0;
   right: 0;
+  object-fit: cover;
   margin: auto;
   transform: translateY(25%);
   opacity: 0;
@@ -220,7 +221,7 @@ article:hover::before{
 
 article::before{
   opacity: 0;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
 
 @keyframes slideInFrombottom {
