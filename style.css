@@ -150,6 +150,7 @@ body{
   margin-left: 10px;
 }
 
+
 @keyframes slideInFromRight {
     from {
       transform: translateX(150px);
@@ -159,41 +160,67 @@ body{
     }
   }
 
-  .logo{
-    animation: slideInFromRight 1s ease; 
-  }
-
-
 .logo{
-    display: flex;
-    justify-content: right;
-    width: 350px;
-    height: 400px;
-    cursor: pointer;
-    background: linear-gradient(180deg,
-    rgb(241, 212, 157),rgb(234, 145, 145),rgb(232, 232, 151));
-    border-radius: 30px;
-    transition: all 0.3s;
-    
+    animation: slideInFromRight 1s ease; 
+}
+
+
+article{
+  margin: 50px auto;
+  width: 300px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+article img:first-child{
+  width: 100%;
+  box-shadow: 0px 10px 15px -3px
+  rgba(233, 233, 233, 0.5);
+  border-radius: 8px;
+  object-fit: cover;
+  transition: all 0.3S ease;
+}
+article img:last-child{
+  position:absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  opacity: 0;
+  transition: all 0.3s ease;
 
 }
-.logo img{
-    width:340px;
-    height: 385px;
-    padding: 7px 7px;
-    border-radius: 30px;
-    transition: all 0.3s;
+article:hover img:first-child {
+  transform:  perspective(250px)
+  rotateX(40deg)
+  translateY(-5%)
+  translateZ(0);
+}
+
+article:hover img:last-child{
+  width: 350px;
+  opacity: 1;
+  transform: translateY(-18%);
   
 }
-.logo:hover{
-    border-radius: 180px;
-    background: linear-gradient(180deg,
-    rgb(241, 185, 80),rgb(239, 124, 124),rgb(232, 232, 71));
+article:hover::before{
+  position:relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+   rgba(0,0,0)95%;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
-.logo img:hover{
-    border-radius: 180px;
-    scale: 0.95s;
-    box-shadow: 0px 0px 100px #43d1d8;
+
+article::before{
+  opacity: 0;
+  transition: all 0.1s ease;
 }
 
 @keyframes slideInFrombottom {
