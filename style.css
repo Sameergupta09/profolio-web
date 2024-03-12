@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 
 body{
@@ -183,8 +186,8 @@ article img:first-child{
 article img:last-child{
   position:absolute;
   width: 100%;
-  top: 0;
-  left: 0;
+  top: -55px;
+  left: -69.5px;
   right: 0;
   object-fit: cover;
   margin: auto;
@@ -201,7 +204,7 @@ article:hover img:first-child {
 }
 
 article:hover img:last-child{
-  width: 350px;
+  width: 400px;
   opacity: 1;
   transform: translateY(-18%);
   
@@ -265,15 +268,27 @@ article::before{
 }
 .secondhalf{
   padding: 30px 40px ;
-  margin: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
- 
   background-color: white;
   border-radius: 30px ;
 
+}
+.about-p{
+  width: 50%;
+
+}
+.logo-2{
+  display: flex;
+}
+.logo-2 img{
+  width: 30%;
+  height: 50%;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
 }
 .hr2{
   margin:10px 16% 40px 16%;
