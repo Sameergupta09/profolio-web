@@ -17,7 +17,9 @@
             <li><a href="#project">Project</a></li>
             <li><a href="#Achivement">Achievment</a></li>
             <li><a href="#contact">Contact Me</a></li>
+            <img src="sun.png" alt="logo" id="icon">
         </ul>
+        
     </nav>
     <section>
         <div class="box-main">
@@ -79,9 +81,7 @@
                     
                 <p>Let's code the future together! 💻✨</p>
             </div>
-            <div class="logo-2">
-                <img src="sam-img.jpg" alt="logo">
-            </div>
+            
         </div>
     </section>
     
@@ -131,9 +131,25 @@
     </section>
     <footer class="background">
         <p class="text-footer">
-        Copyright $copy; 2027 -iEducate-Transforming Online Education- All Right reserved
+        Copyright $copy: 2027 -iEducate-Transforming Online Education- All Right reserved
         </p>
     </footer>
+
+
+
+<script>
+
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("light-theme");
+        if(document.body.classList.contains("light-theme")){
+            icon.src = "moon.png";
+
+        }else{
+            icon.src = "sun.png";
+        }
+    }
+</script>
 
 </body>
 </html>

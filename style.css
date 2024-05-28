@@ -8,7 +8,23 @@ html{
 
 
 body{
-    background-color:rgb(22, 27, 31);
+    background-color:var(--secondary-color);
+}
+
+:root{
+  --primary-color: #edf2fc;
+  --secondary-color:rgb(22, 27, 31);
+
+}
+
+.light-theme{
+  --primary-color: #000106;
+  --secondary-color: #edf2fc;
+}
+
+#icon{
+  width:30px;
+  cursor: pointer;
 }
 
 
@@ -30,11 +46,11 @@ body{
 }
 .port li a {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
     font-size: 38px;
     width: 30px;
     font-family: cursive;
-    text-shadow: #ffffff 0 0 12px,
+    text-shadow: var(--primary-color) 0 0 12px,
     #a91079 0 0 25px, #a91079 0 0 35px , #a91079 0 0 45px;
 }
 
@@ -61,11 +77,11 @@ body{
 }
 .nav-list li a{
     text-decoration: none;
-    color: white;
-    font-size: 22px;
+    color: var(--primary-color);
+    font-size: 20px;
 }
 .nav-list li :hover {
-    text-shadow: 0 0 12px #ffffff, 0 0 25px rgb(121, 242, 246), 0 0 35px rgb(75, 176, 210) , 0 0 45px rgb(46, 188, 201);
+    text-shadow: 0 0 12px var(--primary-color), 0 0 25px rgb(29, 169, 174), 0 0 35px rgb(75, 176, 210) , 0 0 45px rgb(46, 188, 201);
     transition: 0.3s;
     
 
@@ -78,12 +94,12 @@ body{
     max-width: 80%;
     margin: 50px;
     height: 80%;
-    color: rgb(165, 238, 248);
+    color: var(--primary-color);
     padding-bottom: 50px;
 
 }
 .highlight{
-  color: white;
+  color: var(--primary-color);
   font-weight: bold;
 }
 .firstHalf{
@@ -121,16 +137,16 @@ body{
 .app{
   font-size:25px ;
   font-family: sans-serif;
-  color: white;
+  color: var(--primary-color);
   margin: 30px 0px;
 }
 .apps a i{
   font-size: 45px; 
-  background-color: white;
+  background-color: #edf2fc;
   border-radius: 8px;
   width: 40px;
   height: 42px;
-  border: 3px solid black;
+  border: 3px solid var(--secondary-color);
   
 }
 
@@ -178,7 +194,7 @@ article{
 article img:first-child{
   width: 100%;
   box-shadow: 0px 10px 15px -3px
-  rgba(233, 233, 233, 0.5);
+  var(--primary-color);
   border-radius: 8px;
   object-fit: cover;
   transition: all 0.3S ease;
@@ -252,11 +268,11 @@ article::before{
 }
 .btn:hover{
     background-color: rgb(22, 27, 31);
-    color:white;
+    color: white;
 }
 
 .about{
-  color: white;
+  color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,8 +288,10 @@ article::before{
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  background-color: white;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 30px ;
+  margin: 40px;
 
 }
 .about-p{
