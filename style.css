@@ -285,8 +285,7 @@ article::before{
 .secondhalf{
   padding: 30px 40px ;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content:space-around;
   align-self: center;
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -298,15 +297,22 @@ article::before{
   width: 50%;
 
 }
+
+
 .logo-2{
   display: flex;
+  width: 300px;
+  position: relative;
 }
 .logo-2 img{
-  width: 30%;
-  height: 50%;
-  display: flex;
-  align-items:center;
-  justify-content: flex-end;
+  margin: 50px auto;
+  width: 300px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 10px 15px -3px
+  var(--secondary-color);
+  border-radius: 8px;
+  object-fit: cover;
 }
 .hr2{
   margin:10px 16% 40px 16%;

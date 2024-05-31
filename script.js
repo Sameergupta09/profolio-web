@@ -8,3 +8,11 @@ icon.onclick = function(){
         icon.src = "sun.png";
     }
 }
+
+
+const typed = new Typed('.multi-text', {
+    strings: ['Frontend Developer', 'Web Developer', 'Python Developer'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    loop: true,
+});
