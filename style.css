@@ -13,12 +13,12 @@ body{
 
 :root{
   --primary-color: #edf2fc;
-  --secondary-color:rgb(22, 27, 31);
+  --secondary-color:rgb(23, 27, 30);
 
 }
 
 .light-theme{
-  --primary-color: #000106;
+  --primary-color: #1e2028;
   --secondary-color: #edf2fc;
 }
 
@@ -199,49 +199,8 @@ article img:first-child{
   object-fit: cover;
   transition: all 0.3S ease;
 }
-article img:last-child{
-  position:absolute;
-  width: 100%;
-  top: -55px;
-  left: -69.5px;
-  right: 0;
-  object-fit: cover;
-  margin: auto;
-  transform: translateY(25%);
-  opacity: 0;
-  transition: all 0.3s ease;
 
-}
-article:hover img:first-child {
-  transform:  perspective(250px)
-  rotateX(40deg)
-  translateY(-5%)
-  translateZ(0);
-}
 
-article:hover img:last-child{
-  width: 400px;
-  opacity: 1;
-  transform: translateY(-18%);
-  
-}
-article:hover::before{
-  position:relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-   rgba(0,0,0)95%;
-  border-radius: 8px;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-article::before{
-  opacity: 0;
-  transition: all 0.3s ease;
-}
 
 @keyframes slideInFrombottom {
     from {
@@ -332,7 +291,7 @@ article::before{
 }
 
 .background {
-  background: rgba(0, 0, 0, 0.7) url("con-back.jpeg");
+  background: rgba(0, 0, 0, 0.7) url("./img/con-back.jpeg");
   background-size: cover;
   background-blend-mode: darken;
 }
